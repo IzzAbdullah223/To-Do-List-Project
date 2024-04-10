@@ -1,0 +1,122 @@
+body{
+    background: linear-gradient(135deg,#326937,#0b5a72);
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.Card{
+    margin-left: 690px;
+    margin-top: 200px;
+    background-color: white;
+    min-width: 540px;
+    width: 30%;
+    border-radius: 12px;
+    padding: 25px 25px;
+    box-shadow: 3px 3px 5px;
+}
+
+.Card h2{
+    font-family: 'Poppins',sans-serif;
+    color: #002765cc;
+    display: flex;
+    align-items: center;
+    margin-top: -10px;
+    height: 10vh;
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 5px;
+    margin-right: 20px;
+   
+}
+
+
+.Card h2 img{
+    width: 35px;
+    margin-left: 10px;
+    
+}
+ 
+#TextAndButtonContainer{
+    margin-top: -10px;
+    margin-left: 20px;
+    background: #edeef0;
+    border-radius: 30px;
+    display: flex; /* I used display flex here so i can push the button or make space between the input and the button*/
+    justify-content: space-between;
+}
+
+.Card input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#BTN{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #ff7402f1;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+     border-radius: 40px;
+
+}
+
+.Card ul li{
+    font-family: Arial;
+    font-size: 1.4em;
+    list-style: none; /*To remove the dot behind the text*/
+    user-select: auto; /*So the user can select the text*/
+    cursor: pointer ;
+    position: relative;
+    width: 90%;
+     
+}
+
+.Card ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    background-image: url(unchecked.png);
+    background-size: cover;
+    left: -40px;
+    
+}
+
+.Selected{
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.Selected::before{
+    background-image: url(checked.png);
+}
+
+#Cross{
+    position: relative;
+    top: 35px;
+    left: 500px;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    color: #555;
+    user-select: none;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+}
+
+#Cross:hover{
+    background-color: #edeef0;
+}
+
+
+ 
+ 
